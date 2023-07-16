@@ -30,7 +30,7 @@ function openPopup(){
 let thankU = document.querySelector(".l-main-aside-contactForm-check");
 function openThankU(event){
     event.preventDefault();
-    fetch("https://formsubmit.co/ajax/5f02fa74928ab50b5bc49d545c3348c3", {
+    fetch("https://formsubmit.co/ajax/9725de9aecfce696ba6d54eb809da3c4", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
