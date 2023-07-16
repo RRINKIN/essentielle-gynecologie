@@ -1,0 +1,29 @@
+.l-main-section-about-btn, .l-main-section-index-btn {
+    background: map-get($colors, gradientBg1);
+    width: 15rem;
+    height: 3rem;
+    padding: 0.7rem;
+    text-align: center;
+    color: white;
+    
+    a {
+        color: map-get($colors, Couleur3);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .l-main-section-about-btn:hover {
+        background: map-get($colors, Btn1);
+        cursor: pointer;
+    }
+
+    .l-footer-buttonSubmit-arrow {
+        cursor: pointer;
+    }
+
+    .l-main-section-index-btn:hover {
+        background: map-get($colors, Btn1);
+        cursor: pointer;
+    }
+}
