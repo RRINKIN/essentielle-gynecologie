@@ -1,0 +1,103 @@
+footer {
+    background-color: map-get($colors, darkBg);
+    color: map-get($colors, Couleur3);
+
+    .l-footer-about, .l-footer-Newsletter, .l-footer-followMe {
+        padding: 0 1rem;
+        p {
+            color: map-get($colors, txt);
+        }   
+    }
+
+    .l-footer-wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .l-footer-buttonSubmit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+
+        input {
+            outline: none;
+            padding: 0.5rem;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .l-footer-buttonSubmit-arrow {
+            display: inline-block;
+            background-color: map-get($colors, Btn1);
+            height: 2.8rem;
+            width: 2.8rem;
+
+            i {
+                padding: 1rem;
+            }
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        padding: 2rem 0;
+    }
+    .l-footer-socialIcons {
+        padding: 1rem 0;
+        i {
+            padding: 0 0.3rem;
+            text-decoration: none;
+            color: map-get($colors, standardBg);
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .l-main-section-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;   
+
+        img {
+            padding: 0 2rem;
+        }
+    }
+    
+    .l-footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 2rem;
+    }
+
+    .l-footer-about {
+        width: 45%;
+    }
+
+    .l-footer-Newsletter {
+        width: 35%;
+    }
+
+    .l-footer-followMe {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .l-footer-about {
+        width: 45%;
+    }
+
+    .l-footer-Newsletter {
+        width: 45%;
+    }
+
+    .l-footer-followMe {
+        width: 20%;
+    }
+}

@@ -1,0 +1,124 @@
+//Contact form
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.l-main-aside-contactForm-container-form, .l-main-aside-contactForm-container-thanku  {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.4s;
+}
+
+.l-main-aside-contactForm-container-form {
+    transform: translate(-50%, -50%) scale(0.1);
+    display: none;
+    z-index: 2;
+}
+
+.l-main-aside-contactForm-container-thanku {
+    display: none;
+    z-index: 3;
+}
+
+.l-main-aside-contactForm-fields {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: auto;
+    max-width: 500px;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 20px auto;
+
+    input {
+        outline: none;
+        padding: 0.5rem;
+        width: 100%;
+        margin: 0.5rem 1rem;
+        border: solid 1 grey;
+        color: lightslategray;
+    }
+
+    textarea {
+        padding: 0.5rem;
+        width: 100%;
+        margin: 0.5rem 1rem;
+        border: solid 1 grey;
+        height: 40%;
+        color: lightslategray;
+    }
+}
+
+.btn {
+    color: white;
+}
+
+// Merci
+.l-main-aside-contactForm-check {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    padding: 1rem;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.4s;
+
+    .l-main-aside-contactForm-check-round {
+        width: 100px;
+        height: 100px;
+        background: rgb(140, 211, 190);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -4rem;
+
+        i {
+            color: white;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .l-main-aside-contactForm-check-text {
+        text-align: center;
+    }
+}
+
+.openPopup {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.closePopup {
+    display: none;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.fa-circle-xmark {
+    color: rgb(193, 10, 10);
+    margin: 0 0 0 auto;
+}

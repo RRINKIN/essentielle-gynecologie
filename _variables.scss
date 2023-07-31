@@ -1,0 +1,39 @@
+$max-width: 1140px;
+$font-family: 'Poppins', sans-serif;
+$font-size: (
+    h1: 48px,
+    h2: 32px,
+    h3: 24px,
+    span: 24px,
+    h1_small: 12px,
+    textMain: 16px,
+    h1Tablet: 40px,
+    h2Tablet: 26px,
+    h3Tablet: 20px,
+    textMainTablet: 13px,
+);
+$font-weight: (
+    h1: 600,
+    h2: 500,
+    h3: 300,
+    span: 200,
+    p: 100,
+);
+$colors: (
+    Btn1: #5E727E,
+    Btn2: #8BD2BF,
+    Couleur3: #fff,
+    txt: #777777,
+    txtWithOpacity: #77777736,
+    title: #222222,
+    link: #8BD2BF,
+    bannerBg1: #5E727E,
+    bannerBg2: #8BD2BF,
+    standardBg: white,
+    bannerBg3: #f5f5f5a6,
+    darkBg: #04091E,
+    purpleBg:  #b6bdff1c,
+    purpleBgIntermediate:  #b6bdff9f,
+    gradientBg1: linear-gradient(45deg, #5E727E, #8BD2BF),
+    icons: #64b09c,
+);
