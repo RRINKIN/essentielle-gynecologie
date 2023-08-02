@@ -143,26 +143,6 @@
     background: map-get($colors, gradientBg1);
 }
 
-.AE {
-    width: 85%;
-}
-
-.Photoshop {
-    width: 90%;
-}
-
-.Illustrator {
-    width: 70%;
-}
-
-.Sublime {
-    width: 95%;
-}
-
-.Sketch {
-    width: 85%;
-}
-
 /* Feedback */
 .l-main-section-feedback{
     background: map-get($colors, bannerBg3);
@@ -255,9 +235,18 @@
     color: map-get($colors, Couleur3);
 }
 
-// ne semble pas fonctionner
-.iframe-rdv {
-    border: 0px;
+.l-main-aside-calendar td, .l-main-aside-calendar th {
+    padding: 0 1rem;
+    text-align: left;
+}
+
+#l-main-aside-calendar-colspan {
+    text-align: center;
+}
+
+// iframe
+.l-main-section-index5-map {
+    max-width: 100%;
     height: 300px;
 }
 
@@ -371,8 +360,15 @@
         justify-content: space-between;
 
         .l-main-section-expertness-wrapperGroup {
-            width: 49%;
+            width: 100%;
         }
+    }
+
+    .l-main-section-about1-CTA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     /* feedback */
@@ -413,11 +409,6 @@
     .l-main-aside-calendar {
         max-width: 30%;
         text-align: center;
-    }
-
-    .l-main-icon-openings {
-        display: block;
-        margin: 10px;
     }
 
     .l-main-section-logo {

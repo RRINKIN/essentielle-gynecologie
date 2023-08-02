@@ -9,6 +9,12 @@
     max-width: $max-width;
     margin: 0 auto;
 }
+
+.l-header-title {
+    display: inline;
+    margin-left: 10px;
+}
+
 .l-header-logo {
     padding: 1rem;
     margin: 1rem 0;

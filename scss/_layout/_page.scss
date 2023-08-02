@@ -1,0 +1,41 @@
+* {
+    font-family: $font-family;
+    h1 {
+        font-weight: map-get($font-weight, h1);
+    }
+    h2 {
+        font-weight: map-get($font-weight, h2);
+    }
+    h3 {
+        font-weight: map-get($font-weight, h3);
+    }
+    p, span, q, i, time {
+        font-weight: map-get($font-weight, p);
+    }
+}
+
+
+
+h1, h2, h3, h4 {
+    padding: 2rem 0 0 0;
+}
+
+ul {
+    margin: 2rem 0 0 0;
+    padding: 0 2rem 1rem 2rem;
+}
+
+li {
+    padding-left: 2rem;
+}
+
+/* Screen Width */
+.l-page-main {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.l-page-main-wrapper {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}

@@ -1,3 +1,6 @@
+.l-main-section-index-btn {
+    display: block;
+}
 .l-main-section-about-btn, .l-main-section-index-btn {
     background: map-get($colors, gradientBg1);
     width: 15rem;
@@ -5,6 +8,7 @@
     padding: 0.7rem;
     text-align: center;
     color: white;
+    margin: 0 auto;
     
     a {
         color: map-get($colors, Couleur3);

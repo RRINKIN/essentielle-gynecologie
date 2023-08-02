@@ -63,3 +63,11 @@ function closeThankU(){
     header.classList.remove("blur");
     footer.classList.remove("blur");
 }
+
+// Close "contact" popup
+function closeContact(){
+    popup.classList.remove("openPopup");
+    main.classList.remove("blur");
+    header.classList.remove("blur");
+    footer.classList.remove("blur");
+}

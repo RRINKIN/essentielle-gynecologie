@@ -20,18 +20,19 @@
 
 .l-main-aside-contactForm-container-form {
     transform: translate(-50%, -50%) scale(0.1);
-    visibility: hidden;
+    display: none;
     z-index: 2;
 }
 
 .l-main-aside-contactForm-container-thanku {
-    visibility: visible;
+    display: none;
     z-index: 3;
 }
 
 .l-main-aside-contactForm-fields {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 500px;
+    width: auto;
+    max-width: 500px;
     height: 600px;
     background: rgb(255, 255, 255);
     display: flex;
@@ -39,6 +40,7 @@
     flex-wrap: wrap;
     border-radius: 10px;
     padding: 1rem;
+    margin: 20px auto;
 
     input {
         outline: none;
@@ -107,11 +109,16 @@
 }
 
 .openPopup {
-    visibility: visible;
+    display: block;
     transform: translate(-50%, -50%) scale(1);
 }
 
 .closePopup {
-    visibility: hidden;
+    display: none;
     transform: translate(-50%, -50%) scale(0.1);
+}
+
+.fa-circle-xmark {
+    color: rgb(193, 10, 10);
+    margin: 0 0 0 auto;
 }
