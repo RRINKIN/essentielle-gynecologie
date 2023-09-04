@@ -57,8 +57,8 @@
 }
 
 .sectionWrapper1 {
-    background-color: map-get($colors, purpleBg); 
-}
+    background-color: map-get($colors, purpleBg);
+            }
 
 .sectionWrapper2 {
     background-color: map-get($colors, Couleur3); 
@@ -115,7 +115,7 @@
 }
 
 .l-m-card-function {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 /* Expertness*/
@@ -137,11 +137,25 @@
     height: 0.8rem;
 }
 
-.l-main-section-expertnessBar-inside {
+// commented as replaced with the below active class
+/*.l-main-section-expertnessBar-inside {
     border-radius: 1rem;
     height: 0.8rem;
     background: map-get($colors, gradientBg1);
+    animation: expertnessBarAnimation 6s;
+}*/
+
+.active {
+    border-radius: 1rem;
+    height: 0.8rem;
+    background: map-get($colors, gradientBg1);
+    animation: expertnessBarAnimation 6s;
 }
+
+@keyframes expertnessBarAnimation {
+    0%   { width: 5%; background-color: map-get($colors, gradientBg1);}
+    100% { width: 100%; background-color: map-get($colors, gradientBg1); }
+  }
 
 /* Feedback */
 .l-main-section-feedback{
@@ -231,7 +245,7 @@
     max-width: 80%;
     text-align: left;
     height: auto;
-    padding: 4rem 0;
+    padding: 1rem 0 3rem 0;
     color: map-get($colors, Couleur3);
 }
 
@@ -242,6 +256,7 @@
 
 #l-main-aside-calendar-colspan {
     text-align: center;
+    margin-top: 3rem;
 }
 
 // iframe
@@ -264,6 +279,11 @@
         p, span, q, i, time {
             font-size: map-get($font-size, textMainTablet);
         }
+    }
+
+    .l-main-section-index-cta {
+        display: flex;
+        justify-content: space-between;
     }
 
     .l-main-section-about1, .l-main-section-about2, .l-main-section-expertness, .l-main-section-feedback {
@@ -369,6 +389,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 0.5rem 0;
     }
 
     /* feedback */
@@ -424,3 +445,4 @@
         }
     }
 }
+
